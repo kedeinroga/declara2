@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-GB">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.0.0.379"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.musepolyfill.bgsize.js", "jquery.musemenu.js", "jquery.museresponsive.js", "require.js", "portfolio.css"], "outOfDate":[]};
+</script>
+  
+  <title>Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
+  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=3943632961"/>
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css?crc=4012147393" id="pagesheet"/>
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_portfolio.css?crc=3824530138"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_a-master.css?crc=511966187"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_portfolio.css?crc=371261229" id="nomq_pagesheet"/>
+  <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script src="https://webfonts.creativecloud.com/roboto:n5,n4,n9,n7,n3:default;open-sans:n4,n7:default.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+    <!--custom head HTML-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+  <!--HTML Widget code-->
+  
+<style>
+.menu-toggle{
+	flex:0 0 auto;
+	width:40px;
+	height:40px;
+	border:1px solid #FFFFFF;
+    box-sizing: border-box;
+	cursor:pointer;
+	position:relative;
+}
+.hamburger,.cross{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.hamburger span{
+	display:block;
+	width:18px;
+	height:2px;
+	margin-bottom:3px;
+	overflow:hidden;
+	position:relative;
+}
+.hamburger span:last-child{
+	margin:0;
+}
+.hamburger span:before,.hamburger span:after{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#FFFFFF;
+	transform:translateX(-200%);
+	transition:transform ease 300ms;
+}
+.hamburger span:after{
+	transform:translateX(0);
+}
+.hamburger span:nth-child(2):before,.hamburger span:nth-child(2):after{
+	transition-delay:75ms;
+}
+.hamburger span:last-child:before,.hamburger span:last-child:after{
+	transition-delay:150ms;
+}
+.menu-toggle:hover .hamburger span:before{
+	transform:translateX(0);
+}
+.menu-toggle:hover .hamburger span:after{
+	transform:translateX(200%);
+}
+.menu-toggle.active .hamburger span:before{
+	transform:translateX(100%);
+}
+.menu-toggle.active .hamburger span:after{
+	transform:translateX(200%);
+}
+.cross span{
+	display:block;
+	width:18px;
+	height:2px;
+	background-color:#FFFFFF;
+	transform:translateY(50%) rotate(45deg) scaleX(0);
+	transition:transform ease 200ms;
+}
+.cross span:last-child{
+	transform:translateY(-50%) rotate(-45deg) scaleX(0);
+}
+.menu-toggle.active .cross span{
+	transition-delay:450ms;
+	transform:translateY(50%) rotate(45deg) scaleX(1);
+}
+.menu-toggle.active .cross span:last-child{
+	transform:translateY(-50%) rotate(-45deg) scaleX(1);
+}
+</style>
+	
+<style>
+a {
+       transition:all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.clip_frame, .Container, .ContainerGroup, .verticalspacer, #preloader,{
+transition:none !important;
+-webkit-transition:none !important;
+-moz-transition:none !important;
+-o-transition:none !important;
+}
+
+.SlideShowContentPanel *{
+transition:none !important;
+-webkit-transition:none !important;
+-moz-transition:none !important;
+-o-transition:none !important;
+}
+
+.ContainerGroup, .wp-panel, wp-panel-active{
+transition:none !important;
+-webkit-transition:none !important;
+-moz-transition:none !important;
+-o-transition:none !important;
+}
+
+.js div#preloader{
+transition:none !important;
+-webkit-transition:none !important;
+-moz-transition:none !important;
+-o-transition:none !important;
+}
+
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});
+</script>
+
+<style>
+.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #1D2430 url(' ') no-repeat center center; }
+</style>
+
+  <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <!--HTML Widget code-->
+  
+<div id="preloader"></div>
+
+  
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1025"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- group -->
+    <div class="clearfix grpelem" id="pu26723"><!-- group -->
+     <div class="browser_width shared_content" id="u26723-bw" data-content-guid="u26723-bw_content">
+      <div class="shadow rgba-background" id="u26723"><!-- simple frame --></div>
+     </div>
+     <nav class="MenuBar clearfix" id="menuu26724"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem" id="u26739"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u26742" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26743-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26743-2" class="shared_content" data-content-guid="u26743-2_content">Home</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u26767"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u26768" href="about-us.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26769-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26769-2" class="shared_content" data-content-guid="u26769-2_content">About us</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u26753"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u26754" href="services.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26755-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26755-2" class="shared_content" data-content-guid="u26755-2_content">Services</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u26732"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix colelem" id="u26733" href="portfolio.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26735-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26735-2" class="shared_content" data-content-guid="u26735-2_content">Portfolio</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u26760"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u26763" href="shortcodes.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26765-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26765-2" class="shared_content" data-content-guid="u26765-2_content">ShortCodes</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u26774"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u26775" href="blog.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26776-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26776-2" class="shared_content" data-content-guid="u26776-2_content">Blog</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u26725"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u26728" href="shop.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26730-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26730-2" class="shared_content" data-content-guid="u26730-2_content">Shop</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u26746"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u26747" href="contact.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26749-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p id="u26749-2" class="shared_content" data-content-guid="u26749-2_content">Contact</p></div></a>
+      </div>
+     </nav>
+     <a class="nonblock nontext museBGSize shared_content" id="u26781" href="index.html" data-content-guid="u26781_content"><!-- simple frame --></a>
+     <div class="PamphletWidget clearfix allow_click_through" id="pamphletu26782" data-visibility="changed" style="visibility:hidden"><!-- none box -->
+      <div class="ThumbGroup clearfix colelem" data-col-pos="0" id="u26855"><!-- none box -->
+       <div class="popup_anchor allow_click_through grpelem" data-col-pos="0" id="u26856popup">
+        <div class="Thumb popup_element clearfix" data-col-pos="0" id="u26856"><!-- group -->
+         <div class="size_fixed grpelem shared_content" id="u26857" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u26857_content"><!-- custom html -->
+          
+  <div class="menu-toggle">
+	<div class="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="cross">
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor allow_click_through colelem" data-col-pos="1" id="u26783popup">
+       <div class="ContainerGroup clearfix" data-col-pos="1" id="u26783" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- none box -->
+        <div class="Container invi clearfix grpelem" data-col-pos="0" id="u26784" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- group -->
+         <nav class="MenuBar clearfix grpelem" id="menuu26791" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- vertical box -->
+          <div class="MenuItemContainer clearfix colelem" id="u26806"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem" id="u26809" href="index.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26811-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26811-4_0_content">Home</p></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem" id="u26813"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem" id="u26814" href="about-us.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26817-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26817-4_0_content">About us</p></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem" id="u26827"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem" id="u26830" href="services.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26832-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26832-4_0_content">Services</p></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem" id="u26792"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive smooth clearfix grpelem" id="u26793" href="portfolio.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26796-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26796-4_0_content">Works</p></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem" id="u26841"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem" id="u26842" href="index.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26844-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26844-4_0_content">Team</p></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem" id="u26799"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem" id="u26800" href="blog.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26801-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26801-4_0_content">Blog</p></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem" id="u26820"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem" id="u26823" href="shop.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26825-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26825-4_0_content">Shop</p></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem" id="u26834"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem" id="u26837" href="contact.html"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem" id="u26839-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p class="shared_content" data-content-guid="u26839-4_0_content">Contact</p></div></a>
+          </div>
+         </nav>
+         <div class="clearfix grpelem shared_content" id="ppu26787-4" data-content-guid="ppu26787-4_content"><!-- column -->
+          <div class="clearfix colelem" id="pu26787-4"><!-- group -->
+           <a class="nonblock nontext anim_swing rgba-background rounded-corners clearfix grpelem" id="u26787-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p></p></a>
+           <a class="nonblock nontext anim_swing rgba-background rounded-corners clearfix grpelem" id="u26786-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p></p></a>
+           <a class="nonblock nontext anim_swing rgba-background rounded-corners clearfix grpelem" id="u26785-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p></p></a>
+           <a class="nonblock nontext anim_swing rgba-background rounded-corners clearfix grpelem" id="u26789-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p></p></a>
+           <a class="nonblock nontext anim_swing rgba-background rounded-corners clearfix grpelem" id="u26790-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p></p></a>
+          </div>
+          <div class="clearfix colelem" id="u26848-6" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+           <p>71 Pilgrim Avenue, Chevy Chase,</p>
+           <p>MD 20815</p>
+          </div>
+          <div class="clearfix colelem" id="u26788-6" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+           <p>support@yoursite.com</p>
+           <p>+ 1 (234) 567 8902</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix grpelem" id="pphome"><!-- column -->
+     <div class="clearfix colelem shared_content" id="phome" data-content-guid="phome_content"><!-- group -->
+      <a class="anchor_item grpelem" id="home" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
+      <div class="size_fixed grpelem" id="u24233" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
+       
+            
+      </div>
+      <div class="size_fixed grpelem" id="u24234" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
+       
+            
+      </div>
+      <div class="browser_width grpelem" id="u12258-bw">
+       <div class="museBGSize fix-bg" id="u12258"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem" id="u12259-4-bw">
+       <div class="head clearfix" id="u12259-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+        <p id="u12259-2">Modern</p>
+       </div>
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu12543"><!-- group -->
+      <div class="clearfix grpelem" id="u12543"><!-- column -->
+       <div class="clearfix colelem" id="u12545-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12545-2" class="shared_content" data-content-guid="u12545-2_content">Modern Website</p>
+       </div>
+       <div class="clearfix colelem" id="u12546-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12546-2" class="shared_content" data-content-guid="u12546-2_content"><span id="u12546">Wireframe Creation</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12547-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12547-2" class="shared_content" data-content-guid="u12547-2_content"><span id="u12547">UX/ UI Design</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12548-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12548-2" class="shared_content" data-content-guid="u12548-2_content">Responsive Website</p>
+       </div>
+       <div class="clearfix colelem" id="u12549-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12549-2" class="shared_content" data-content-guid="u12549-2_content"><span id="u12549">Branding/ Identity Design</span></p>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem" id="u12550-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u12550-4_0_content">View Project</p></a>
+      </div>
+      <div class="museBGSize grpelem shared_content" id="u12544" data-content-guid="u12544_content"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix colelem" id="pu12551"><!-- group -->
+      <div class="museBGSize grpelem shared_content" id="u12551" data-content-guid="u12551_content"><!-- simple frame --></div>
+      <div class="clearfix grpelem" id="u12552"><!-- column -->
+       <div class="clearfix colelem" id="u12553-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12553-2" class="shared_content" data-content-guid="u12553-2_content">New Technologies</p>
+       </div>
+       <div class="clearfix colelem" id="u12554-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12554-2" class="shared_content" data-content-guid="u12554-2_content"><span id="u12554">Responsive Website</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12555-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12555-2" class="shared_content" data-content-guid="u12555-2_content"><span id="u12555">Advanced Design</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12556-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12556-2" class="shared_content" data-content-guid="u12556-2_content"><span id="u12556">UX/ UI Design</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12557-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12557-2" class="shared_content" data-content-guid="u12557-2_content"><span id="u12557">Branding/ Identity Design</span></p>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem" id="u12558-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u12558-4_0_content">View Project</p></a>
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu12718"><!-- group -->
+      <div class="clearfix grpelem" id="u12718"><!-- column -->
+       <div class="clearfix colelem" id="u12720-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12720-2" class="shared_content" data-content-guid="u12720-2_content">Incredible Device</p>
+       </div>
+       <div class="clearfix colelem" id="u12721-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12721-2" class="shared_content" data-content-guid="u12721-2_content"><span id="u12721">Responsive Website</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12722-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12722-2" class="shared_content" data-content-guid="u12722-2_content"><span id="u12722">Advanced Design</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12723-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12723-2" class="shared_content" data-content-guid="u12723-2_content"><span id="u12723">UX/ UI Design</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12724-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12724-2" class="shared_content" data-content-guid="u12724-2_content"><span id="u12724">Branding/ Identity Design</span></p>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem" id="u12725-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u12725-4_0_content">View Project</p></a>
+      </div>
+      <div class="museBGSize grpelem shared_content" id="u12719" data-content-guid="u12719_content"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix colelem" id="pu12726"><!-- group -->
+      <div class="museBGSize grpelem shared_content" id="u12726" data-content-guid="u12726_content"><!-- simple frame --></div>
+      <div class="clearfix grpelem" id="u12727"><!-- column -->
+       <div class="clearfix colelem" id="u12728-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12728-2" class="shared_content" data-content-guid="u12728-2_content">Trendy Designs</p>
+       </div>
+       <div class="clearfix colelem" id="u12729-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12729-2" class="shared_content" data-content-guid="u12729-2_content"><span id="u12729">Responsive Website</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12730-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12730-2" class="shared_content" data-content-guid="u12730-2_content"><span id="u12730">Advanced Design</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12731-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12731-2" class="shared_content" data-content-guid="u12731-2_content"><span id="u12731">UX/ UI Design</span></p>
+       </div>
+       <div class="clearfix colelem" id="u12732-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+        <p id="u12732-2" class="shared_content" data-content-guid="u12732-2_content"><span id="u12732">Branding/ Identity Design</span></p>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem" id="u12733-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u12733-4_0_content">View Project</p></a>
+      </div>
+     </div>
+     <div class="browser_width colelem shared_content" id="u12519-bw" data-content-guid="u12519-bw_content">
+      <div id="u12519"><!-- column -->
+       <div class="clearfix" id="u12519_align_to_page">
+        <div class="clearfix colelem" id="u12525-6" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"><!-- content -->
+         <p id="u12525-2">Build Great Website</p>
+         <p id="u12525-4">DESIGNED FOR ANY WEBSITE!</p>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem" id="u12531-4" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"><!-- content --><p>Purchase Now</p></a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="2581" data-content-above-spacer="2581" data-content-below-spacer="542" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="browser_width grpelem" id="u1774-bw">
+     <div id="u1774"><!-- column -->
+      <div class="clearfix" id="u1774_align_to_page">
+       <div class="clearfix colelem" id="pu1777"><!-- group -->
+        <a class="nonblock nontext grpelem" id="u1777" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></a>
+        <div class="clearfix grpelem shared_content" id="u1799-4" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1799-4_content"><!-- content -->
+         <p class="shared_content" data-content-guid="u1799-4_0_content">Latest Posts</p>
+        </div>
+        <div class="clearfix grpelem shared_content" id="u1825-4" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1825-4_content"><!-- content -->
+         <p class="shared_content" data-content-guid="u1825-4_0_content"><span id="u1825">Useful Links</span></p>
+        </div>
+        <div class="clearfix grpelem shared_content" id="u1864-4" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1864-4_content"><!-- content -->
+         <p class="shared_content" data-content-guid="u1864-4_0_content"><span id="u1864">Flickr gallery</span></p>
+        </div>
+       </div>
+       <div class="clearfix colelem" id="ppu1787-4"><!-- group -->
+        <div class="clearfix grpelem" id="pu1787-4"><!-- column -->
+         <div class="clearfix colelem" id="u1787-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1787-4_0_content">Lorem Ipsum is simply dummy text the printing and typesetting industry orem Ipsum has been the industry to make.</p>
+         </div>
+         <div class="clearfix colelem" id="u1790-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1790-4_0_content">Address:</p>
+         </div>
+         <div class="clearfix colelem" id="u1793-6" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1793-6_0_content">71 Pilgrim Avenue, Chevy Chase,</p>
+          <p class="shared_content" data-content-guid="u1793-6_1_content">MD 20815</p>
+         </div>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu1802-4" data-content-guid="pu1802-4_content"><!-- column -->
+         <div class="clearfix colelem" id="u1802-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1802-4_0_content"><span id="u1802">Generators on the Internet tend to repeat predefined chunks necessary</span></p>
+         </div>
+         <div class="colelem shared_content" id="u1814" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1814_content"><!-- simple frame --></div>
+         <div class="clearfix colelem" id="u1805-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1805-4_0_content"><span id="u1805">Model sentence structures generate Lorem Ipsum which looks reasonable</span></p>
+         </div>
+         <div class="colelem shared_content" id="u1817" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1817_content"><!-- simple frame --></div>
+         <div class="clearfix colelem" id="u1808-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1808-4_0_content"><span id="u1808">Versions have evolved over the years</span></p>
+         </div>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu1843-4" data-content-guid="pu1843-4_content"><!-- column -->
+         <div class="clearfix colelem" id="u1843-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1843-4_0_content"><span id="u1843">Home Page Variations</span></p>
+         </div>
+         <div class="clearfix colelem" id="u1846-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1846-4_0_content"><span id="u1846">Awesome Slidershows</span></p>
+         </div>
+         <div class="clearfix colelem" id="u1849-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1849-4_0_content"><span id="u1849">Features Typography</span></p>
+         </div>
+         <div class="clearfix colelem" id="u1852-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1852-4_0_content"><span id="u1852">Different &amp; Unique Pages</span></p>
+         </div>
+         <div class="clearfix colelem" id="u1855-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1855-4_0_content"><span id="u1855">Single and Portfolios</span></p>
+         </div>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu1876" data-content-guid="pu1876_content"><!-- column -->
+         <a class="nonblock nontext colelem" id="u1876" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></a>
+         <a class="nonblock nontext colelem" id="u1885" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></a>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu1877" data-content-guid="pu1877_content"><!-- column -->
+         <a class="nonblock nontext colelem" id="u1877" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></a>
+         <a class="nonblock nontext colelem" id="u1886" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></a>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu1878" data-content-guid="pu1878_content"><!-- column -->
+         <a class="nonblock nontext colelem" id="u1878" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></a>
+         <a class="nonblock nontext colelem" id="u1887" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></a>
+        </div>
+       </div>
+       <div class="clearfix colelem" id="pu1796-11"><!-- group -->
+        <div class="clearfix grpelem" id="u1796-11" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p class="shared_content" data-content-guid="u1796-11_0_content"><span id="u1796">Phone:</span> + 1 (234) 567 8901</p>
+         <p class="shared_content" data-content-guid="u1796-11_1_content"><span id="u1796-4">Email:</span> support@yoursite.com</p>
+         <p class="shared_content" data-content-guid="u1796-11_2_content"><span id="u1796-7">Fax:</span> + 1 (234) 567 8902</p>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu1820" data-content-guid="pu1820_content"><!-- column -->
+         <div class="colelem shared_content" id="u1820" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1820_content"><!-- simple frame --></div>
+         <div class="clearfix colelem" id="u1811-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1811-4_0_content"><span id="u1811">Repeat predefined chunks necessary</span></p>
+         </div>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu1858-4" data-content-guid="pu1858-4_content"><!-- column -->
+         <div class="clearfix colelem" id="u1858-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1858-4_0_content"><span id="u1858">Recent Blogs or News</span></p>
+         </div>
+         <div class="clearfix colelem" id="u1861-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+          <p class="shared_content" data-content-guid="u1861-4_0_content"><span id="u1861">Layered PSD Files</span></p>
+         </div>
+        </div>
+       </div>
+       <div class="clearfix colelem" id="pu1942"><!-- group -->
+        <div class="grpelem shared_content" id="u1942" data-content-guid="u1942_content"><!-- simple frame --></div>
+        <div class="clearfix grpelem" id="u1945-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p id="u1945-2" class="shared_content" data-content-guid="u1945-2_content">Copyright 2018 © gsrthemes9</p>
+        </div>
+        <a class="nonblock nontext clearfix grpelem" id="u1948-4" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u1948-4_0_content"></p></a>
+        <a class="nonblock nontext clearfix grpelem" id="u1949-4" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u1949-4_0_content"></p></a>
+        <a class="nonblock nontext clearfix grpelem" id="u1950-4" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u1950-4_0_content"></p></a>
+        <a class="nonblock nontext clearfix grpelem" id="u1951-4" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u1951-4_0_content"></p></a>
+        <a class="nonblock nontext clearfix grpelem" id="u1952-4" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p class="shared_content" data-content-guid="u1952-4_0_content"></p></a>
+        <div class="grpelem shared_content" id="u5894" data-content-guid="u5894_content"><!-- custom html -->
+         <style>
+.html {
+background-color: #FFFFFF;
+overflow-x: hidden;
+}
+.fix-bg{
+  background-attachment:fixed !important;
+}
+.smooth {
+transition : all 0.4s ease 0s;
+}
+.bgz{
+    -webkit-animation:zoom 5s infinite;
+    animation:zoom 5s infinite;
+}
+@-webkit-keyframes zoom{
+    0%,100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:115%;
+    }
+}
+@keyframes zoom{
+    0%, 100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:115%;
+    }
+}
+
+.bdr{
+  border: dashed 2px #ccc !important;
+}
+.bdr-btm{
+  border-bottom: dashed 2px #ccc !important;
+padding-left: 25px;
+}
+.bdr-lft{
+  border-left: dashed 2px #ccc !important;
+}
+.bdr-rgt{
+  border-right: dashed 2px #ccc !important;
+}
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+</style>
+
+<script>
+$('.lft-sec').addClass('wow fadeInLeft');
+$('.head').addClass('wow fadeInUp');
+$('.sub').addClass('wow fadeInDown');
+$('.rgt-sec').addClass('wow fadeInRight');
+$('.up').addClass('wow fadeInUp');
+</script>
+<script>
+      new WOW().init();
+</script>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1024" data-min-width="769" data-max-width="1024"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu26723"><!-- group -->
+     <span class="browser_width placeholder" data-placeholder-for="u26723-bw_content"><!-- placeholder node --></span>
+     <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu26724"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26739"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem temp_no_id" href="index.html" data-orig-id="u26742"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26743-4"><!-- content --><span class="placeholder" data-placeholder-for="u26743-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26767"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem temp_no_id" href="about-us.html" data-orig-id="u26768"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26769-4"><!-- content --><span class="placeholder" data-placeholder-for="u26769-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26753"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem temp_no_id" href="services.html" data-orig-id="u26754"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26755-4"><!-- content --><span class="placeholder" data-placeholder-for="u26755-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26732"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix colelem temp_no_id" href="portfolio.html" data-orig-id="u26733"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26735-4"><!-- content --><span class="placeholder" data-placeholder-for="u26735-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26760"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem temp_no_id" href="shortcodes.html" data-orig-id="u26763"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26765-4"><!-- content --><span class="placeholder" data-placeholder-for="u26765-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26774"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem temp_no_id" href="blog.html" data-orig-id="u26775"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26776-4"><!-- content --><span class="placeholder" data-placeholder-for="u26776-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26725"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem temp_no_id" href="shop.html" data-orig-id="u26728"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26730-4"><!-- content --><span class="placeholder" data-placeholder-for="u26730-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u26746"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem temp_no_id" href="contact.html" data-orig-id="u26747"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26749-4"><!-- content --><span class="placeholder" data-placeholder-for="u26749-2_content"><!-- placeholder node --></span></div></a>
+      </div>
+     </nav>
+     <span class="nonblock nontext museBGSize placeholder" data-placeholder-for="u26781_content"><!-- placeholder node --></span>
+     <div class="PamphletWidget clearfix allow_click_through temp_no_id" data-visibility="changed" style="visibility:hidden" data-orig-id="pamphletu26782"><!-- none box -->
+      <div class="ThumbGroup clearfix colelem temp_no_id" data-col-pos="0" data-orig-id="u26855"><!-- none box -->
+       <div class="popup_anchor allow_click_through grpelem temp_no_id" data-col-pos="0" data-orig-id="u26856popup">
+        <div class="Thumb popup_element clearfix temp_no_id" data-col-pos="0" data-orig-id="u26856"><!-- group -->
+         <span class="size_fixed grpelem placeholder" data-placeholder-for="u26857_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor allow_click_through colelem temp_no_id" data-col-pos="1" data-orig-id="u26783popup">
+       <div class="ContainerGroup clearfix temp_no_id" data-col-pos="1" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="u26783"><!-- none box -->
+        <div class="Container invi clearfix grpelem temp_no_id" data-col-pos="0" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="u26784"><!-- group -->
+         <nav class="MenuBar clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="menuu26791"><!-- vertical box -->
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26806"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="index.html" data-orig-id="u26809"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26811-4"><!-- content --><span class="placeholder" data-placeholder-for="u26811-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26813"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="about-us.html" data-orig-id="u26814"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26817-4"><!-- content --><span class="placeholder" data-placeholder-for="u26817-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26827"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="services.html" data-orig-id="u26830"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26832-4"><!-- content --><span class="placeholder" data-placeholder-for="u26832-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26792"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive smooth clearfix grpelem temp_no_id" href="portfolio.html" data-orig-id="u26793"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26796-4"><!-- content --><span class="placeholder" data-placeholder-for="u26796-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26841"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="index.html" data-orig-id="u26842"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26844-4"><!-- content --><span class="placeholder" data-placeholder-for="u26844-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26799"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="blog.html" data-orig-id="u26800"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26801-4"><!-- content --><span class="placeholder" data-placeholder-for="u26801-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26820"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="shop.html" data-orig-id="u26823"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26825-4"><!-- content --><span class="placeholder" data-placeholder-for="u26825-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26834"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="contact.html" data-orig-id="u26837"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26839-4"><!-- content --><span class="placeholder" data-placeholder-for="u26839-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+         </nav>
+         <span class="clearfix grpelem placeholder" data-placeholder-for="ppu26787-4_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pphome"><!-- column -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="phome_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu12543"><!-- group -->
+      <div class="clearfix grpelem temp_no_id" data-orig-id="u12543"><!-- column -->
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12545-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12545-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12546-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12546-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12547-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12547-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12548-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12548-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12549-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12549-2_content"><!-- placeholder node --></span>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12550-4"><!-- content --><span class="placeholder" data-placeholder-for="u12550-4_0_content"><!-- placeholder node --></span></a>
+      </div>
+      <span class="museBGSize grpelem placeholder" data-placeholder-for="u12544_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu12551"><!-- group -->
+      <span class="museBGSize grpelem placeholder" data-placeholder-for="u12551_content"><!-- placeholder node --></span>
+      <div class="clearfix grpelem temp_no_id" data-orig-id="u12552"><!-- column -->
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12553-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12553-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12554-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12554-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12555-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12555-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12556-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12556-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12557-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12557-2_content"><!-- placeholder node --></span>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12558-4"><!-- content --><span class="placeholder" data-placeholder-for="u12558-4_0_content"><!-- placeholder node --></span></a>
+      </div>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu12718"><!-- group -->
+      <div class="clearfix grpelem temp_no_id" data-orig-id="u12718"><!-- column -->
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12720-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12720-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12721-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12721-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12722-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12722-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12723-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12723-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12724-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12724-2_content"><!-- placeholder node --></span>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u12725-4"><!-- content --><span class="placeholder" data-placeholder-for="u12725-4_0_content"><!-- placeholder node --></span></a>
+      </div>
+      <span class="museBGSize grpelem placeholder" data-placeholder-for="u12719_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu12726"><!-- group -->
+      <span class="museBGSize grpelem placeholder" data-placeholder-for="u12726_content"><!-- placeholder node --></span>
+      <div class="clearfix grpelem temp_no_id" data-orig-id="u12727"><!-- column -->
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12728-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12728-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12729-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12729-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12730-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12730-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12731-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12731-2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12732-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u12732-2_content"><!-- placeholder node --></span>
+       </div>
+       <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12733-4"><!-- content --><span class="placeholder" data-placeholder-for="u12733-4_0_content"><!-- placeholder node --></span></a>
+      </div>
+     </div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u12519-bw_content"><!-- placeholder node --></span>
+    </div>
+    <div class="verticalspacer" data-offset-top="2581" data-content-above-spacer="2581" data-content-below-spacer="552" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="browser_width grpelem temp_no_id" data-orig-id="u1774-bw">
+     <div class="temp_no_id" data-orig-id="u1774"><!-- column -->
+      <div class="clearfix temp_no_id" data-orig-id="u1774_align_to_page">
+       <div class="clearfix colelem temp_no_id" data-orig-id="pu1777"><!-- group -->
+        <a class="nonblock nontext grpelem temp_no_id shared_content" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1777" data-content-guid="u1777_content"><!-- simple frame --></a>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="u1799-4_content"><!-- placeholder node --></span>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="u1825-4_content"><!-- placeholder node --></span>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="u1864-4_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-orig-id="ppu1787-4"><!-- group -->
+        <div class="clearfix grpelem temp_no_id" data-orig-id="pu1787-4"><!-- column -->
+         <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1787-4"><!-- content -->
+          <span class="placeholder" data-placeholder-for="u1787-4_0_content"><!-- placeholder node --></span>
+         </div>
+         <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1790-4"><!-- content -->
+          <span class="placeholder" data-placeholder-for="u1790-4_0_content"><!-- placeholder node --></span>
+         </div>
+         <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1793-6"><!-- content -->
+          <span class="placeholder" data-placeholder-for="u1793-6_0_content"><!-- placeholder node --></span>
+          <span class="placeholder" data-placeholder-for="u1793-6_1_content"><!-- placeholder node --></span>
+         </div>
+        </div>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="pu1802-4_content"><!-- placeholder node --></span>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="pu1843-4_content"><!-- placeholder node --></span>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="pu1876_content"><!-- placeholder node --></span>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="pu1877_content"><!-- placeholder node --></span>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="pu1878_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-orig-id="pu1796-11"><!-- group -->
+        <div class="clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1796-11"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u1796-11_0_content"><!-- placeholder node --></span>
+         <span class="placeholder" data-placeholder-for="u1796-11_1_content"><!-- placeholder node --></span>
+         <span class="placeholder" data-placeholder-for="u1796-11_2_content"><!-- placeholder node --></span>
+        </div>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="pu1820_content"><!-- placeholder node --></span>
+        <span class="clearfix grpelem placeholder" data-placeholder-for="pu1858-4_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-orig-id="pu1942"><!-- group -->
+        <span class="grpelem placeholder" data-placeholder-for="u1942_content"><!-- placeholder node --></span>
+        <div class="clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1945-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u1945-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1948-4"><!-- content --><span class="placeholder" data-placeholder-for="u1948-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1949-4"><!-- content --><span class="placeholder" data-placeholder-for="u1949-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1950-4"><!-- content --><span class="placeholder" data-placeholder-for="u1950-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1951-4"><!-- content --><span class="placeholder" data-placeholder-for="u1951-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1952-4"><!-- content --><span class="placeholder" data-placeholder-for="u1952-4_0_content"><!-- placeholder node --></span></a>
+        <span class="grpelem placeholder" data-placeholder-for="u5894_content"><!-- placeholder node --></span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_768" data-min-width="481" data-max-width="768"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pphome"><!-- column -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="phome_content"><!-- placeholder node --></span>
+     <div class="browser_width colelem" id="u12543-bw">
+      <div class="temp_no_id" data-orig-id="u12543"><!-- column -->
+       <div class="clearfix" id="u12543_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12545-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12545-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12546-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12546-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12547-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12547-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12548-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12548-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12549-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12549-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12550-4"><!-- content --><span class="placeholder" data-placeholder-for="u12550-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width colelem" id="u12544-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12544_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem" id="u12551-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12551_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem" id="u12552-bw">
+      <div class="temp_no_id" data-orig-id="u12552"><!-- column -->
+       <div class="clearfix" id="u12552_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12553-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12553-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12554-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12554-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12555-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12555-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12556-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12556-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12557-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12557-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12558-4"><!-- content --><span class="placeholder" data-placeholder-for="u12558-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width colelem" id="u12718-bw">
+      <div class="temp_no_id" data-orig-id="u12718"><!-- column -->
+       <div class="clearfix" id="u12718_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12720-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12720-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12721-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12721-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12722-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12722-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12723-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12723-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12724-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12724-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12725-4"><!-- content --><span class="placeholder" data-placeholder-for="u12725-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width colelem" id="u12719-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12719_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem" id="u12726-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12726_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem" id="u12727-bw">
+      <div class="temp_no_id" data-orig-id="u12727"><!-- column -->
+       <div class="clearfix" id="u12727_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12728-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12728-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12729-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12729-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12730-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12730-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12731-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12731-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12732-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12732-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12733-4"><!-- content --><span class="placeholder" data-placeholder-for="u12733-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u12519-bw_content"><!-- placeholder node --></span>
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu26723"><!-- group -->
+     <span class="browser_width placeholder" data-placeholder-for="u26723-bw_content"><!-- placeholder node --></span>
+     <span class="nonblock nontext museBGSize placeholder" data-placeholder-for="u26781_content"><!-- placeholder node --></span>
+     <div class="PamphletWidget clearfix allow_click_through temp_no_id" data-visibility="changed" style="visibility:hidden" data-orig-id="pamphletu26782"><!-- none box -->
+      <div class="ThumbGroup clearfix colelem temp_no_id" data-col-pos="0" data-orig-id="u26855"><!-- none box -->
+       <div class="popup_anchor allow_click_through grpelem temp_no_id" data-col-pos="0" data-orig-id="u26856popup">
+        <div class="Thumb popup_element clearfix temp_no_id" data-col-pos="0" data-orig-id="u26856"><!-- group -->
+         <span class="size_fixed grpelem placeholder" data-placeholder-for="u26857_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor allow_click_through colelem temp_no_id" data-col-pos="1" data-orig-id="u26783popup">
+       <div class="ContainerGroup clearfix temp_no_id" data-col-pos="1" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="u26783"><!-- none box -->
+        <div class="Container invi clearfix grpelem temp_no_id" data-col-pos="0" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="u26784"><!-- group -->
+         <nav class="MenuBar clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="menuu26791"><!-- vertical box -->
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26806"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="index.html" data-orig-id="u26809"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26811-4"><!-- content --><span class="placeholder" data-placeholder-for="u26811-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26813"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="about-us.html" data-orig-id="u26814"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26817-4"><!-- content --><span class="placeholder" data-placeholder-for="u26817-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26827"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="services.html" data-orig-id="u26830"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26832-4"><!-- content --><span class="placeholder" data-placeholder-for="u26832-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26792"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive smooth clearfix grpelem temp_no_id" href="portfolio.html" data-orig-id="u26793"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26796-4"><!-- content --><span class="placeholder" data-placeholder-for="u26796-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26841"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="index.html" data-orig-id="u26842"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26844-4"><!-- content --><span class="placeholder" data-placeholder-for="u26844-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26799"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="blog.html" data-orig-id="u26800"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26801-4"><!-- content --><span class="placeholder" data-placeholder-for="u26801-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26820"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="shop.html" data-orig-id="u26823"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26825-4"><!-- content --><span class="placeholder" data-placeholder-for="u26825-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26834"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="contact.html" data-orig-id="u26837"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26839-4"><!-- content --><span class="placeholder" data-placeholder-for="u26839-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+         </nav>
+         <span class="clearfix grpelem placeholder" data-placeholder-for="ppu26787-4_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="3690" data-content-above-spacer="3689" data-content-below-spacer="1177" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="browser_width grpelem temp_no_id" data-orig-id="u1774-bw">
+     <div class="temp_no_id" data-orig-id="u1774"><!-- column -->
+      <div class="clearfix temp_no_id" data-orig-id="u1774_align_to_page">
+       <span class="nonblock nontext colelem placeholder" data-placeholder-for="u1777_content"><!-- placeholder node --></span>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fluidWidth" data-pintopage="page_fixedLeft" data-orig-id="u1787-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1787-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1790-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1790-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1793-6"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1793-6_0_content"><!-- placeholder node --></span>
+        <span class="placeholder" data-placeholder-for="u1793-6_1_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1796-11"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1796-11_0_content"><!-- placeholder node --></span>
+        <span class="placeholder" data-placeholder-for="u1796-11_1_content"><!-- placeholder node --></span>
+        <span class="placeholder" data-placeholder-for="u1796-11_2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1799-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1799-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1802-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1802-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="colelem temp_no_id" data-orig-id="u1814"><!-- simple frame --></div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1805-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1805-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="colelem temp_no_id" data-orig-id="u1817"><!-- simple frame --></div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1808-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1808-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="colelem temp_no_id" data-orig-id="u1820"><!-- simple frame --></div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1811-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1811-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1825-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1825-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1843-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1843-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1846-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1846-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1849-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1849-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1852-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1852-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1855-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1855-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1858-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1858-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1861-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1861-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1864-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1864-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-orig-id="pu1876"><!-- group -->
+        <a class="nonblock nontext grpelem temp_no_id shared_content" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1876" data-content-guid="u1876_content"><!-- simple frame --></a>
+        <a class="nonblock nontext grpelem temp_no_id shared_content" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1877" data-content-guid="u1877_content"><!-- simple frame --></a>
+        <a class="nonblock nontext grpelem temp_no_id shared_content" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1878" data-content-guid="u1878_content"><!-- simple frame --></a>
+        <a class="nonblock nontext grpelem temp_no_id shared_content" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1885" data-content-guid="u1885_content"><!-- simple frame --></a>
+        <a class="nonblock nontext grpelem temp_no_id shared_content" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1886" data-content-guid="u1886_content"><!-- simple frame --></a>
+        <a class="nonblock nontext grpelem temp_no_id shared_content" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1887" data-content-guid="u1887_content"><!-- simple frame --></a>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-orig-id="pu1942"><!-- group -->
+        <span class="grpelem placeholder" data-placeholder-for="u1942_content"><!-- placeholder node --></span>
+        <div class="clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1945-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u1945-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1948-4"><!-- content --><span class="placeholder" data-placeholder-for="u1948-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1949-4"><!-- content --><span class="placeholder" data-placeholder-for="u1949-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1950-4"><!-- content --><span class="placeholder" data-placeholder-for="u1950-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1951-4"><!-- content --><span class="placeholder" data-placeholder-for="u1951-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-orig-id="u1952-4"><!-- content --><span class="placeholder" data-placeholder-for="u1952-4_0_content"><!-- placeholder node --></span></a>
+        <span class="grpelem placeholder" data-placeholder-for="u5894_content"><!-- placeholder node --></span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_480" data-max-width="480"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu26723"><!-- group -->
+     <span class="browser_width placeholder" data-placeholder-for="u26723-bw_content"><!-- placeholder node --></span>
+     <span class="nonblock nontext museBGSize placeholder" data-placeholder-for="u26781_content"><!-- placeholder node --></span>
+     <div class="PamphletWidget clearfix allow_click_through temp_no_id" data-visibility="changed" style="visibility:hidden" data-orig-id="pamphletu26782"><!-- none box -->
+      <div class="popup_anchor allow_click_through grpelem temp_no_id" data-col-pos="1" data-orig-id="u26783popup">
+       <div class="ContainerGroup clearfix temp_no_id" data-col-pos="1" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="u26783"><!-- none box -->
+        <div class="Container invi clearfix grpelem temp_no_id" data-col-pos="0" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="u26784"><!-- group -->
+         <nav class="MenuBar clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-orig-id="menuu26791"><!-- vertical box -->
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26806"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="index.html" data-orig-id="u26809"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26811-4"><!-- content --><span class="placeholder" data-placeholder-for="u26811-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26813"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="about-us.html" data-orig-id="u26814"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26817-4"><!-- content --><span class="placeholder" data-placeholder-for="u26817-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26827"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="services.html" data-orig-id="u26830"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26832-4"><!-- content --><span class="placeholder" data-placeholder-for="u26832-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26792"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive smooth clearfix grpelem temp_no_id" href="portfolio.html" data-orig-id="u26793"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26796-4"><!-- content --><span class="placeholder" data-placeholder-for="u26796-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26841"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="index.html" data-orig-id="u26842"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26844-4"><!-- content --><span class="placeholder" data-placeholder-for="u26844-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26799"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="blog.html" data-orig-id="u26800"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26801-4"><!-- content --><span class="placeholder" data-placeholder-for="u26801-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26820"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="shop.html" data-orig-id="u26823"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26825-4"><!-- content --><span class="placeholder" data-placeholder-for="u26825-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+          <div class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u26834"><!-- horizontal box -->
+           <a class="nonblock nontext MenuItem MenuItemWithSubMenu smooth clearfix grpelem temp_no_id" href="contact.html" data-orig-id="u26837"><!-- horizontal box --><div class="MenuItemLabel clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u26839-4"><!-- content --><span class="placeholder" data-placeholder-for="u26839-4_0_content"><!-- placeholder node --></span></div></a>
+          </div>
+         </nav>
+         <span class="clearfix grpelem placeholder" data-placeholder-for="ppu26787-4_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <div class="ThumbGroup clearfix grpelem temp_no_id" data-col-pos="0" data-sizePolicy="fluidWidth" data-pintopage="page_fixedRight" data-orig-id="u26855"><!-- none box -->
+       <div class="popup_anchor allow_click_through grpelem temp_no_id" data-col-pos="0" data-orig-id="u26856popup">
+        <div class="Thumb popup_element clearfix temp_no_id" data-col-pos="0" data-sizePolicy="fixed" data-pintopage="page_fixedRight" data-leftAdjustmentDoneBy="u26856popup" data-orig-id="u26856"><!-- group -->
+         <span class="size_fixed grpelem placeholder" data-placeholder-for="u26857_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pphome"><!-- column -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="phome_content"><!-- placeholder node --></span>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12543-bw">
+      <div class="temp_no_id" data-orig-id="u12543"><!-- column -->
+       <div class="clearfix temp_no_id" data-orig-id="u12543_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12545-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12545-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12546-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12546-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12547-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12547-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12548-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12548-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12549-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12549-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12550-4"><!-- content --><span class="placeholder" data-placeholder-for="u12550-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12544-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12544_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12551-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12551_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12552-bw">
+      <div class="temp_no_id" data-orig-id="u12552"><!-- column -->
+       <div class="clearfix temp_no_id" data-orig-id="u12552_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12553-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12553-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12554-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12554-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12555-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12555-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12556-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12556-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12557-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12557-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12558-4"><!-- content --><span class="placeholder" data-placeholder-for="u12558-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12718-bw">
+      <div class="temp_no_id" data-orig-id="u12718"><!-- column -->
+       <div class="clearfix temp_no_id" data-orig-id="u12718_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12720-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12720-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12721-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12721-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12722-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12722-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12723-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12723-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12724-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12724-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12725-4"><!-- content --><span class="placeholder" data-placeholder-for="u12725-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12719-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12719_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12726-bw">
+      <span class="museBGSize placeholder" data-placeholder-for="u12726_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u12727-bw">
+      <div class="temp_no_id" data-orig-id="u12727"><!-- column -->
+       <div class="clearfix temp_no_id" data-orig-id="u12727_align_to_page">
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12728-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12728-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12729-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12729-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12730-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12730-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12731-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12731-2_content"><!-- placeholder node --></span>
+        </div>
+        <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12732-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u12732-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext anim_swing rounded-corners clearfix colelem temp_no_id" href="portfolio.html#home" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u12733-4"><!-- content --><span class="placeholder" data-placeholder-for="u12733-4_0_content"><!-- placeholder node --></span></a>
+       </div>
+      </div>
+     </div>
+     <span class="browser_width colelem placeholder" data-placeholder-for="u12519-bw_content"><!-- placeholder node --></span>
+    </div>
+    <div class="verticalspacer" data-offset-top="3500" data-content-above-spacer="3499" data-content-below-spacer="1358" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="browser_width grpelem temp_no_id" data-orig-id="u1774-bw">
+     <div class="temp_no_id" data-orig-id="u1774"><!-- column -->
+      <div class="clearfix temp_no_id" data-orig-id="u1774_align_to_page">
+       <span class="nonblock nontext colelem placeholder" data-placeholder-for="u1777_content"><!-- placeholder node --></span>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fluidWidth" data-pintopage="page_fixedLeft" data-orig-id="u1787-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1787-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1790-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1790-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1793-6"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1793-6_0_content"><!-- placeholder node --></span>
+        <span class="placeholder" data-placeholder-for="u1793-6_1_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1796-11"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1796-11_0_content"><!-- placeholder node --></span>
+        <span class="placeholder" data-placeholder-for="u1796-11_1_content"><!-- placeholder node --></span>
+        <span class="placeholder" data-placeholder-for="u1796-11_2_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1799-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1799-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1802-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1802-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <span class="colelem placeholder" data-placeholder-for="u1814_content"><!-- placeholder node --></span>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1805-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1805-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <span class="colelem placeholder" data-placeholder-for="u1817_content"><!-- placeholder node --></span>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1808-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1808-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <span class="colelem placeholder" data-placeholder-for="u1820_content"><!-- placeholder node --></span>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1811-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1811-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1825-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1825-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1843-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1843-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1846-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1846-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1849-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1849-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1852-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1852-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1855-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1855-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1858-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1858-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1861-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1861-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-orig-id="u1864-4"><!-- content -->
+        <span class="placeholder" data-placeholder-for="u1864-4_0_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem temp_no_id" data-orig-id="pu1876"><!-- group -->
+        <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u1876_content"><!-- placeholder node --></span>
+        <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u1877_content"><!-- placeholder node --></span>
+        <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u1878_content"><!-- placeholder node --></span>
+       </div>
+       <div class="clearfix colelem" id="pu1885"><!-- group -->
+        <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u1885_content"><!-- placeholder node --></span>
+        <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u1886_content"><!-- placeholder node --></span>
+        <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u1887_content"><!-- placeholder node --></span>
+       </div>
+       <span class="colelem placeholder" data-placeholder-for="u1942_content"><!-- placeholder node --></span>
+       <div class="clearfix colelem" id="pu1945-4"><!-- group -->
+        <div class="clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u1945-4"><!-- content -->
+         <span class="placeholder" data-placeholder-for="u1945-2_content"><!-- placeholder node --></span>
+        </div>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u1948-4"><!-- content --><span class="placeholder" data-placeholder-for="u1948-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u1949-4"><!-- content --><span class="placeholder" data-placeholder-for="u1949-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u1950-4"><!-- content --><span class="placeholder" data-placeholder-for="u1950-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u1951-4"><!-- content --><span class="placeholder" data-placeholder-for="u1951-4_0_content"><!-- placeholder node --></span></a>
+        <a class="nonblock nontext clearfix grpelem temp_no_id" href="index.html" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u1952-4"><!-- content --><span class="placeholder" data-placeholder-for="u1952-4_0_content"><!-- placeholder node --></span></a>
+        <span class="grpelem placeholder" data-placeholder-for="u5894_content"><!-- placeholder node --></span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide weather to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.musepolyfill.bgsize","jquery.watch","webpro","musewpslideshow","jquery.museoverlay","touchswipe","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.popup_anchor.allow_click_through');/* resize height */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1024', '#bp_768', '#bp_480'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#pamphletu26782', ['#bp_infinity', '#bp_1024', '#bp_768', '#bp_480'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'loose',event:'click',deactivationEvent:'mouseout_click',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:true,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:true}); });/* #pamphletu26782 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=380897831" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  
+<script>
+$(document).ready(function(){
+	$('.menu-toggle').on('click',function(){
+		$('.menu-toggle').toggleClass('active');
+	});
+});
+</script>
+	
+   </body>
+</html>
